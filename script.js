@@ -2,11 +2,6 @@ const resultsArea = document.querySelector(".results");
 const searchArea = document.querySelector("#search-box");
 const optGroupResults = document.querySelector(".autocomplete");
 const optContainer = document.querySelector(".autocomplete__list");
-const searchForm = document.querySelector('.app__search-form');
-
-searchForm.addEventListener('submit', function(e) {
-  e.preventDefault();
-});
 
 let textInput;
 let arrOptions = [];
