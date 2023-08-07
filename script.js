@@ -82,8 +82,13 @@ function createTemplateResult(element) {
   return fragment;
 }
 
+
 searchArea.addEventListener("keyup", (e) => {
-  textInput = e.target.value;
+  textInput = e.target.value.trim();
+  if (textInput.length === 0) {
+    optGroupResults.style.display = "none";
+    return;
+  }
   debGetRequest(textInput);
 });
 
